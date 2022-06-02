@@ -1,0 +1,11 @@
+#!/usr/bin/with-contenv bashio
+# ==============================================================================
+# Start the deauth-detector service
+# s6-overlay docs: https://github.com/just-containers/s6-overlay
+# ==============================================================================
+
+# shellcheck shell=bash
+
+bashio::log.info "Starting deauth-detector script with wlan1"
+exec python3 /usr/share/script.py wlan1 $SUPERVISOR_TOKEN
+bashio::log.info "Script exited"

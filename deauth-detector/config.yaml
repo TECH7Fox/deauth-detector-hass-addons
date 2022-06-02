@@ -1,0 +1,26 @@
+name: Deauth Detector
+version: 0.1.0
+slug: deauth-detector
+description: Detects deauth attacks on wifi
+url: https://github.com/TECH7Fox/deauth-detector-hass-addons
+image: "ghcr.io/tech7fox/{arch}-addon-deauth-detector"
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+host_network: true
+init: false
+full_access: true
+privileged:
+  - NET_ADMIN
+  - SYS_ADMIN
+  - SYS_RAWIO
+  - SYS_TIME
+  - SYS_NICE
+  - SYS_RESOURCE
+  - SYS_PTRACE
+  - SYS_MODULE
+  - DAC_READ_SEARCH
+homeassistant_api: true
