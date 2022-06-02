@@ -32,6 +32,7 @@ class DeauthenticationDetector:
                 
                 now = datetime.now()
                 self.latest = now
+                time = now.strftime("%H:%M:%S")
 
                 addr1 = pkt.addr1
                 addr2 = pkt.addr2
@@ -40,7 +41,7 @@ class DeauthenticationDetector:
                 # signalStrength = str(pkt.dBm_AntSignal)
                 # length = str(pkt.len)
                 # reason = str(pkt.reason)
-                print(f"[{now.strftime("%H:%M:%S")}] Detected deauth! Target: {addr1} <-> {addr2}")
+                print(f"[{time}] Detected deauth! Target: {addr1} <-> {addr2}")
                 
                 headers = {
                     'Authorization': 'Bearer ' + SUPERVISOR_TOKEN,
@@ -67,6 +68,6 @@ class DeauthenticationDetector:
         sniff(prn=self.extract_packets, store=0, *self.args, **self.kwargs)
         return
 
-time = 
-print(f"[{datetime.now().strftime("%H:%M:%S")}] Started monitoring on {monitor_device}")
+time = datetime.now().strftime("%H:%M:%S")
+print(f"[{time}] Started monitoring on {monitor_device}")
 DeauthenticationDetector(iface=monitor_device)

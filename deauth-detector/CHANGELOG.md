@@ -2,6 +2,10 @@
 
 # Changelog
 
+## 0.1.1
+
+- Fix time labels by @TECH7Fox
+
 ## 0.1.0
 
 - Initial release by @TECH7Fox
