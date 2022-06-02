@@ -5,6 +5,7 @@
 
 # shellcheck shell=bash
 
+bashio::log.info "Creating sensor.deauth-detector..."
 curl -X POST -H "Authorization: Bearer ${SUPERVISOR_TOKEN}" \
     -H "Content-Type: application/json" \
     -d '{
@@ -18,4 +19,5 @@ curl -X POST -H "Authorization: Bearer ${SUPERVISOR_TOKEN}" \
             "address 3": "",
         }
     }' \
-  http://supervisor/core/api/states/sensor.deauth_detector
+    http://supervisor/core/api/states/sensor.deauth_detector
+bashio::log.info "sensor.deauth-detector created"
