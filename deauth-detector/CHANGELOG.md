@@ -5,6 +5,7 @@
 ## 0.1.4
 
 - Restore `host_network` to make sure wlan adapters are included by @TECH7Fox
+- Remove `full_access` by @TECH7Fox
 
 ## 0.1.3
 
