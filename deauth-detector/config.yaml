@@ -1,5 +1,5 @@
 name: Deauth Detector
-version: 0.1.3
+version: 0.1.4
 slug: deauth-detector
 description: Detects deauth attacks on wifi networks
 url: https://github.com/TECH7Fox/deauth-detector-hass-addons
@@ -11,6 +11,7 @@ arch:
   - amd64
   - i386
 init: false
+host_network: true
 full_access: true
 privileged:
   - NET_ADMIN

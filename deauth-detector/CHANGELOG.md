@@ -2,6 +2,10 @@
 
 # Changelog
 
+## 0.1.4
+
+- Restore `host_network` to make sure wlan adapters are included by @TECH7Fox
+
 ## 0.1.3
 
 - Remove lint warning by @TECH7Fox
