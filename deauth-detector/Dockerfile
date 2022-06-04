@@ -13,11 +13,10 @@ RUN apt-get update && apt-get install -y \
     pip \
     && rm -rf /var/lib/apt/lists/*
 
-RUN pip install \
+RUN pip install --no-cache-dir \
     scapy \
     cryptography \
     matplotlib \
-    requests \
-    && rm -rf /root/.cache
+    requests
 
 COPY rootfs /

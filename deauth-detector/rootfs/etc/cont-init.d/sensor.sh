@@ -14,9 +14,9 @@ curl -X POST -H "Authorization: Bearer ${SUPERVISOR_TOKEN}" \
             "icon": "mdi:wifi-alert",
             "friendly_name": "Last Deauth Detected",
             "device_class": "timestamp",
-            "address 1": "",
-            "address 2": "",
-            "address 3": ""
+            "address 1": "-",
+            "address 2": "-",
+            "address 3": "-"
         }
     }' \
     http://supervisor/core/api/states/sensor.deauth_detector

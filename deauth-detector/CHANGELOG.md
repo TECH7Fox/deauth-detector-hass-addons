@@ -2,6 +2,12 @@
 
 # Changelog
 
+## 0.1.3
+
+- Remove lint warning by @TECH7Fox
+- Tweak initial sensor attributes by @TECH7Fox
+- Remove `host_network` from `config` by @TECH7Fox 
+
 ## 0.1.2
 
 - Fix initial sensor state by @TECH7Fox
