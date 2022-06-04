@@ -12,6 +12,7 @@ arch:
   - i386
 init: false
 host_network: true
+full_access: true
 privileged:
   - NET_ADMIN
   - SYS_ADMIN
