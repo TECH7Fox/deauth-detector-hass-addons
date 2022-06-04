@@ -2,6 +2,10 @@
 
 # Changelog
 
+## 0.1.2
+
+- Fix initial sensor state by @TECH7Fox
+
 ## 0.1.1
 
 - Fix time labels by @TECH7Fox

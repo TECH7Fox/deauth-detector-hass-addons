@@ -16,7 +16,7 @@ curl -X POST -H "Authorization: Bearer ${SUPERVISOR_TOKEN}" \
             "device_class": "timestamp",
             "address 1": "",
             "address 2": "",
-            "address 3": "",
+            "address 3": ""
         }
     }' \
     http://supervisor/core/api/states/sensor.deauth_detector
