@@ -1,5 +1,5 @@
 name: Deauth Detector
-version: 0.1.4
+version: 0.1.5
 slug: deauth-detector
 description: Detects deauth attacks on wifi networks
 url: https://github.com/TECH7Fox/deauth-detector-hass-addons

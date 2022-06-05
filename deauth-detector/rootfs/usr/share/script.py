@@ -16,8 +16,8 @@ class DeauthenticationDetector:
         '''
         self.args = args
         self.kwargs = kwargs
-        self.Sniffing_Start()
         self.latest = datetime.now()
+        self.Sniffing_Start()
 
     def extract_packets(self, pkt):
         '''
